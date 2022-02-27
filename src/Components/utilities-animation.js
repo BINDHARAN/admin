@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 function UtilitiesAnimation() {
     return (
@@ -6,10 +7,6 @@ function UtilitiesAnimation() {
 
             {/* <!-- Page Heading --> */}
             <h1 className="h3 mb-1 text-gray-800">Animation Utilities</h1>
-            <p className="mb-4">Bootstrap's default utility classes can be found on the official <a
-                href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
-                below were created to extend this theme past the default utility classes built into Bootstrap's
-                framework.</p>
 
             {/* <!-- Content Row --> */}
             <div className="row">
@@ -27,20 +24,20 @@ function UtilitiesAnimation() {
                             </div>
                             <div className="small mb-1">Navbar Dropdown Example:</div>
                             <nav className="navbar navbar-expand navbar-light bg-light mb-4">
-                                <a className="navbar-brand" href="#">Navbar</a>
+                                <Link className="navbar-brand">Navbar</Link>
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                        <Link className="nav-link dropdown-toggle" id="navbarDropdown"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             Dropdown
-                                        </a>
+                                        </Link>
                                         <div className="dropdown-menu dropdown-menu-right animated--grow-in"
                                             aria-labelledby="navbarDropdown">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <Link className="dropdown-item">Action</Link>
+                                            <Link className="dropdown-item">Another action</Link>
                                             <div className="dropdown-divider"></div>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                            <Link className="dropdown-item">Something else here</Link>
                                         </div>
                                     </li>
                                 </ul>
@@ -67,20 +64,20 @@ function UtilitiesAnimation() {
                             </div>
                             <div className="small mb-1">Navbar Dropdown Example:</div>
                             <nav className="navbar navbar-expand navbar-light bg-light mb-4">
-                                <a className="navbar-brand" href="#">Navbar</a>
+                                <Link className="navbar-brand">Navbar</Link>
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                        <Link className="nav-link dropdown-toggle" id="navbarDropdown"
                                             role="button" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             Dropdown
-                                        </a>
+                                        </Link>
                                         <div className="dropdown-menu dropdown-menu-right animated--fade-in"
                                             aria-labelledby="navbarDropdown">
-                                            <a className="dropdown-item" href="#">Action</a>
-                                            <a className="dropdown-item" href="#">Another action</a>
+                                            <Link className="dropdown-item">Action</Link>
+                                            <Link className="dropdown-item">Another action</Link>
                                             <div className="dropdown-divider"></div>
-                                            <a className="dropdown-item" href="#">Something else here</a>
+                                            <Link className="dropdown-item">Something else here</Link>
                                         </div>
                                     </li>
                                 </ul>
@@ -94,9 +91,9 @@ function UtilitiesAnimation() {
                                 </button>
                                 <div className="dropdown-menu animated--fade-in"
                                     aria-labelledby="dropdownMenuButton">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <a className="dropdown-item" href="#">Something else here</a>
+                                    <Link className="dropdown-item">Action</Link>
+                                    <Link className="dropdown-item">Another action</Link>
+                                    <Link className="dropdown-item">Something else here</Link>
                                 </div>
                             </div>
                             <p className="mb-0 small">Note: This utility animates the CSS opacity property, meaning
