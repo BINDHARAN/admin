@@ -41,7 +41,7 @@ function Charts() {
                         </div>
                         {/* <!-- Card Body --> */}
                         <div className="card-body">
-                            <div className="chart-pie ">
+                            <div >
                                 <DoughnutChart />
                             </div>
 
