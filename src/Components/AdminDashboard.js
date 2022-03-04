@@ -4,7 +4,8 @@ import React from 'react'
 import DisplayDashboardData from './DisplayDashboardData'
 import ProjectProgress from './ProjectProgress'
 import ColorSystem from './ColorSystem'
-
+import DoughnutChart from "./doughnutchart"
+import Linechart from "./linechart"
 function AdminDashboard() {
     const datas = [
         {
@@ -80,8 +81,8 @@ function AdminDashboard() {
                         </div>
                         {/* <!-- Card Body --> */}
                         <div className="card-body">
-                            <div className="chart-area">
-                                <canvas id="myAreaChart"></canvas>
+                            <div >
+                                <Linechart />
                             </div>
                         </div>
                     </div>
@@ -111,20 +112,10 @@ function AdminDashboard() {
                         </div>
                         {/* <!-- Card Body --> */}
                         <div className="card-body">
-                            <div className="chart-pie pt-4 pb-2">
-                                <canvas id="myPieChart"></canvas>
+                            <div>
+                                <DoughnutChart />
                             </div>
-                            <div className="mt-4 text-center small">
-                                <span className="mr-2">
-                                    <i className="fas fa-circle text-primary"></i> Direct
-                                </span>
-                                <span className="mr-2">
-                                    <i className="fas fa-circle text-success"></i> Social
-                                </span>
-                                <span className="mr-2">
-                                    <i className="fas fa-circle text-info"></i> Referral
-                                </span>
-                            </div>
+
                         </div>
                     </div>
                 </div>

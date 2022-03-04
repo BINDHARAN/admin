@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import DoughnutChart from './doughnutchart';
+import Linechart from './linechart'
+
 
 function Charts() {
+
+
     return (
         <div className="container-fluid">
 
             {/* <!-- Page Heading --> */}
             <h1 className="h3 mb-2 text-gray-800">Charts</h1>
-
 
             {/* <!-- Content Row --> */}
             <div className="row">
@@ -14,35 +18,18 @@ function Charts() {
                 <div className="col-xl-8 col-lg-7">
 
                     {/* <!-- Area Chart --> */}
-                    <div className="card shadow mb-4">
-                        <div className="card-header py-3">
-                            <h6 className="m-0 font-weight-bold text-primary">Area Chart</h6>
+                    <div className="card shadow">
+                        <div className="card-header ">
+                            <h6 className=" font-weight-bold text-primary">Line Chart</h6>
                         </div>
+
                         <div className="card-body">
-                            <div className="chart-area">
-                                <canvas id="myAreaChart"></canvas>
+                            <div>
+                                <Linechart />
                             </div>
-                            <hr />
-                            Styling for the area chart can be found in the
-                            <code>/js/demo/chart-area-demo.js</code> file.
+
                         </div>
                     </div>
-
-                    {/* <!-- Bar Chart --> */}
-                    <div className="card shadow mb-4">
-                        <div className="card-header py-3">
-                            <h6 className="m-0 font-weight-bold text-primary">Bar Chart</h6>
-                        </div>
-                        <div className="card-body">
-                            <div className="chart-bar">
-                                <canvas id="myBarChart"></canvas>
-                            </div>
-                            <hr />
-                            Styling for the bar chart can be found in the
-                            <code>/js/demo/chart-bar-demo.js</code> file.
-                        </div>
-                    </div>
-
                 </div>
 
                 {/* <!-- Donut Chart --> */}
@@ -54,12 +41,10 @@ function Charts() {
                         </div>
                         {/* <!-- Card Body --> */}
                         <div className="card-body">
-                            <div className="chart-pie pt-4">
-                                <canvas id="myPieChart"></canvas>
+                            <div className="chart-pie ">
+                                <DoughnutChart />
                             </div>
-                            <hr />
-                            Styling for the donut chart can be found in the
-                            <code>/js/demo/chart-pie-demo.js</code> file.
+
                         </div>
                     </div>
                 </div>

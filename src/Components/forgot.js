@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 function Forgot() {
   return (
-    <div className="container-fluid bg-gradient-primary my-5">
+    <div className="container-fluid bg-gradient-primary" style={{ height: "100vh" }}>
 
       {/* <!-- Outer Row --> */}
-      <div className="row justify-content-center">
+      <div className="row justify-content-center ">
 
-        <div className="col-xl-10 col-lg-12 col-md-9">
+        <div className="container-fluid" style={{ marginTop: "100px" }}>
 
           <div className="card o-hidden border-0 shadow-lg ">
             <div className="card-body p-0">

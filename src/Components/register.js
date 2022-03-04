@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 function Register() {
     return (
-        <div className="container-fluid bg-gradient-primary">
+        <div className="container-fluid bg-gradient-primary" style={{ height: "100vh" }}    >
 
-            <div className="card o-hidden border-0 shadow-lg">
+            <div className="card o-hidden border-0 shadow-lg ">
                 <div className="card-body p-0">
                     {/* <!-- Nested Row within Card Body --> */}
                     <div className="row">

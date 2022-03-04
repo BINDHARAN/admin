@@ -195,7 +195,7 @@ function DashboardNavbar() {
                             Activity Log
                         </Link>
                         <div className="dropdown-divider"></div>
-                        <Link className="dropdown-item" data-toggle="modal" data-target="#logoutModal">
+                        <Link className="dropdown-item" to="/login" data-toggle="modal" data-target="#logoutModal">
                             <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </Link>

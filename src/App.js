@@ -15,246 +15,21 @@ import Forgot from './Components/forgot';
 import Error from './Components/404';
 import Blank from './Components/Blank';
 import Table from './Components/table';
-import Chart from "./Components/charts"
+import Chart from "./Components/charts";
+
+//  <!-- APP component --> 
+
 function App() {
   return (
+
     <Switch>
-      <Route path="/Card">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <Card />
-              </div>
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-
-      <Route exact path="/Button">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <Button />
-              </div>
-
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-
-      <Route exact path="/">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <AdminDashboard />
-              </div>
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-
-      <Route exact path="/Button">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <Button />
-              </div>
-
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-      <Route exact path="/utilities-color">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <UtilitiesColor />
-              </div>
-
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-      <Route exact path="/utilities-border">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <UtilitiesBorder />
-              </div>
-
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-      <Route exact path="/utilities-animation">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <UtilitiesAnimation />
-              </div>
-
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-      <Route exact path="/utilities-other">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <UtilitiesOther />
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-
-      <Route exact path="/tables">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <Table />
-              </div>
-
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
-      <Route exact path="/charts">
-        <div id="wrapper">
-          <DashboardSidebar />
-          <div id="content-wrapper" className="d-flex flex-column">
-            <div id="content">
-              <DashboardNavbar />
-              <div className="container-fluid">
-                <Chart />
-              </div>
-
-              <div className="content-wrapper sticky-bottom">
-                <footer className="sticky-footer bg-white">
-                  <div className="container my-auto">
-                    <div className="copyright text-center my-auto">
-                      <span>Copyright &copy;2021</span>
-                    </div>
-                  </div>
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Route>
+      {/* <!-- login page -->  */}
 
       <Route path="/login">
         <Login />
       </Route>
 
-      <Route path="/register">
-        <Register />
-      </Route>
-      <Route path="/forgot-password">
-        <Forgot />
-      </Route>
-      <Route path="/404">
-        <Error />
-      </Route>
+      {/* <!-- blank page -->  */}
 
       <Route exact path="/blank">
         <div id="wrapper">
@@ -270,13 +45,103 @@ function App() {
         </div>
       </Route>
 
+      {/* <!-- register page -->  */}
+
+      <Route path="/register">
+        <Register />
+      </Route>
+      {/* <!-- forgot-password page -->  */}
+
+      <Route path="/forgot-password">
+        <Forgot />
+      </Route>
+
+      {/* <!-- utilities-404 page -->  */}
+
+      <Route path="/404">
+        <Error />
+      </Route>
+
+      {/* <!-- Home page -->  */}
+
+      <div id="wrapper">
+        <DashboardSidebar />
+        <div id="content-wrapper" className="d-flex flex-column">
+          <div id="content">
+            <DashboardNavbar />
+
+            <Route exact path="/">
+              <div className="container-fluid">
+                <AdminDashboard />
+              </div>
+            </Route>
+
+            {/* <!-- button page -->  */}
+
+            <Route exact path="/Button">
+              <div className="container-fluid">
+                <Button />
+              </div>
+            </Route>
+
+            {/* <!-- Card page-->  */}
+            <Route path="/Card">
+              <div className="container-fluid">
+                <Card />
+              </div>
+            </Route>
 
 
+            {/* <!-- UtilitiesColor page -->  */}
+
+            <Route exact path="/utilities-color">
+              <div className="container-fluid">
+                <UtilitiesColor />
+              </div>
+            </Route>
+
+            {/* <!-- UtilitiesBorder page -->  */}
+
+            <Route exact path="/utilities-border">
+              <div className="container-fluid">
+                <UtilitiesBorder />
+              </div>
+            </Route>
+            {/* <!-- UtilitiesAnimation page -->  */}
+
+            <Route exact path="/utilities-animation">
+              <div className="container-fluid">
+                <UtilitiesAnimation />
+              </div>
+            </Route>
+
+
+            {/* <!-- utilities-other page -->  */}
+            <Route exact path="/utilities-other">
+              <div className="container-fluid">
+                <UtilitiesOther />
+              </div>
+            </Route>
+
+            {/* <!-- table page -->  */}
+
+            <Route exact path="/tables">
+              <div className="container-fluid">
+                <Table />
+              </div>
+            </Route>
+
+            {/* <!-- charts page -->  */}
+            <Route exact path="/charts">
+              <div className="container-fluid">
+                <Chart />
+
+              </div>
+            </Route>
+          </div>
+        </div>
+      </div>
     </Switch>
-
-
-
   );
 }
-
 export default App;
